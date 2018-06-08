@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*
+* @Author: 张焱鑫
+* @Date:   2017-09-04 09:27:55
+* @Last Modified by:   程培培
+* @Last Modified time: 2018-03-08 09:44:28
+*/
+/* 公共样式 */
+/*********** 默认全局设置 Start ***********/
+/*单位*/
+body, html {
+  line-height: 1;
+  font-family: 'Microsoft YaHei', 'SimSun', 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  min-height: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  min-height: 100%; }
+  body.modal-open {
+    position: fixed;
+    width: 100%; }
+
+html {
+  min-height: 100%; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:focus {
+  outline: none;
+  -moz-outline: none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/*********** 所有输入框 placeholder 颜色 Start ***********/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #a6a6a6; }
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #a6a6a6; }
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #a6a6a6; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #a6a6a6; }
+
+/*********** 所有输入框 placeholder 颜色 End ***********/
+/**** 字体 ****/
+/*********** 默认全局设置 End ***********/
+/*********** 功能 Start ***********/
+/**** 清除浮动 ****/
+.f-clearboth, .f-cb {
+  height: 0px;
+  clear: both;
+  font-size: 0px;
+  line-height: 0px;
+  zoom: 1; }
+
+/**** 向左浮动 ****/
+.f-floatleft, .f-fl {
+  float: left; }
+
+/**** 向右浮动 ****/
+.f-floatright, .f-fr {
+  float: right; }
+
+/**** 内联块级 ****/
+.f-lineblock, .f-ib {
+  display: inline-block;
+  *display: inline;
+  zoom: 1; }
+
+/**** 文本居中 ****/
+.f-textaligncenter, .f-tac {
+  text-align: center; }
+
+/**** 文本居右 ****/
+.f-textalignright, .f-tar {
+  text-align: right; }
+
+/**** 文本居左 ****/
+.f-textalignleft, .f-tal {
+  text-align: left; }
+
+/**** 垂直居中 ****/
+.f-verticalalignmiddle, .f-vam {
+  vertical-align: middle; }
+
+/**** 溢出隐藏 ****/
+.f-overflowhidden, .f-oh {
+  overflow: hidden; }
+
+/*单行截字*/
+.f-singleline, .f-sl {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; }
+
+/*多行截字*/
+.f-multiline, .f-ml {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden; }
+
+/*自动换行*/
+.f-autonewlines, .f-anl {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+/**** 完全消失 ****/
+.f-displaynone, .f-dn {
+  display: none; }
+
+.f-displayblock, .f-db {
+  display: block; }
+
+/**** 字体大小 ****/
+.f-fontdefault, .f-fdf {
+  font-size: 14px; }
+
+.f-fontsmall, .f-sm {
+  font-size: 12px; }
+
+.f-fontmiddle, .f-mid {
+  font-size: 16px; }
+
+/**** 字体粗细 ****/
+.f-fontnormal, .f-fwn {
+  font-weight: normal; }
+
+.f-fontbold, .f-fwb {
+  font-weight: bold; }
+
+/**** IE8透明度 ****/
+/*********** 功能 End ***********/
+/*********** 状态 Start ***********/
+/**** 指针状态 ****/
+.z-cursor, .z-csd {
+  cursor: default; }
+
+.z-cursorpointer, .z-csp {
+  cursor: pointer; }
+
+.z-cursorhelp, .z-csh {
+  cursor: help; }
+
+/**** 选中 ****/
+/**** 当前 ****/
+/**** 显示 ****/
+.z-show {
+  display: block; }
+
+.z-showinline, .z-sil {
+  display: inline-block; }
+
+/**** 隐藏 ****/
+.z-hide {
+  display: none; }
+
+/**** 打开 ****/
+.z-open {
+  display: block; }
+
+/**** 关闭 ****/
+.z-close {
+  display: none; }
+
+/**** 出错 ****/
+/**** 不可用 ****/
+/*********** 状态 End ***********/
+.content {
+  margin-bottom: 62px; }
+  .content .content_box {
+    width: 980px;
+    margin: 0 auto; }
+
+.mobile_content {
+  display: none;
+  margin-bottom: 62px; }
+
+.right_content {
+  width: 758px;
+  border: 1px solid #e4e4e4;
+  margin-left: 20px;
+  background-color: #fff; }
+
+/*
+* @Author: 李杰
+* @Date:   2018-02-07 10:33:29
+* @Last Modified by:   张焱鑫
+* @Last Modified time: 2018-02-07 15:54:25
+*/
+.agreement_box {
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 4px 0 #e6e6e6;
+          box-shadow: 0 6px 4px 0 #e6e6e6; }
+  .agreement_box .agreement_items_box {
+    margin-left: 4.05333rem;
+    font-size: 0;
+    margin-right: 0.85333rem;
+    line-height: 1.4;
+    padding-top: 0.42667rem; }
+    .agreement_box .agreement_items_box .aib_text {
+      font-size: 0.59733rem;
+      color: #363636;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: -3.2rem; }
+    .agreement_box .agreement_items_box .aib_item {
+      font-size: 0.55467rem;
+      display: inline-block;
+      vertical-align: top; }
+      .agreement_box .agreement_items_box .aib_item a {
+        color: #1596f6;
+        display: inline-block; }
+  .agreement_box .agreement_items {
+    color: #333;
+    padding: 0 0.85333rem 0.10667rem; }
+    .agreement_box .agreement_items label {
+      display: block;
+      font-size: 0;
+      margin: 0.21333rem 0 0.32rem; }
+    .agreement_box .agreement_items span {
+      font-size: 0.49067rem;
+      display: inline-block;
+      max-width: 13.44rem;
+      vertical-align: middle;
+      line-height: 1.4; }
+    .agreement_box .agreement_items i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 0.53333rem;
+      height: 0.53333rem;
+      margin-right: 0.29867rem;
+      background-image: url("../images/checkbox_uncheck_icon.png");
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .agreement_box .agreement_items input {
+      position: absolute;
+      opacity: 0; }
+      .agreement_box .agreement_items input:checked + i {
+        background-image: url("../images/checkbox_check_icon.png"); }
+
+.agreement .agreement_prompt {
+  min-height: 1.36533rem;
+  padding: 0 0.85333rem; }
+  .agreement .agreement_prompt span {
+    background-color: #f7f7f7;
+    font-size: 0.512rem;
+    color: #b3b3b3; }
+  .agreement .agreement_prompt .ap_title {
+    color: #666; }
+
+/*# sourceMappingURL=maps/main.css.map */
